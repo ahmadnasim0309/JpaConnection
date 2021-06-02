@@ -1,0 +1,10 @@
+insert into Movie_Info values(1,'This movie contains lot of emotional scenes','avengers');
+insert into Movie_Info values(2,'This movie contains lot of fight scenes','titanic');
+insert into Movie_Info values(3,'This movie contains lot of nature scenes','transformers');
+insert into Movie_Info values(4,'This movie contains lot of mother scenes','thor');
+insert into Movie_Info values(5,'This movie contains lot of father scenes','captain america');
+insert into Movie_Info values(6,'This movie contains lot of brother scenes','black panther');
+insert into Movie_Info values(7,'This movie contains lot of comic scenes','hulk');
+insert into Movie_Info values(8,'This movie contains lot of tragidy scenes','kunfu');
+insert into Movie_Info values(9,'This movie contains lot of stunt scenes','zathura');
+insert into Movie_Info values(10,'This movie contains lot of temple scenes','jumanji');

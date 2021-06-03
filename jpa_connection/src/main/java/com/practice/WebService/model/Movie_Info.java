@@ -1,8 +1,12 @@
 package com.practice.WebService.model;
 import java.sql.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import com.practice.WebService.post.Post;
 
  
 
@@ -13,7 +17,9 @@ public class Movie_Info {
     private int movieId;
     private String movieName;
     private String movieDesc;
-   // private Date birthDate;
+    
+     @OneToMany(mappedBy = "movie")   //It will create a relationship column in the Post entity.
+    private List<Post> posts;
     
     public Movie_Info() {
         super();
@@ -44,12 +50,13 @@ public class Movie_Info {
         this.movieDesc = movieDesc;
     }
     
-//    public Date getBirthDate() {
-//		return birthDate;
-//	}
-//	public void setBirthDate(Date birthDate) {
-//		this.birthDate = birthDate;
-//	}
+     public List<Post> getPosts() {
+		return posts;
+	}
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
+	}
+	
 	@Override
 	public String toString() {
 		return "Movie_Info [movieId=" + movieId + ", movieName=" + movieName + ", movieDesc=" + movieDesc
